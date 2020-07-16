@@ -1,0 +1,162 @@
+.button
+{
+    -fx-background-color : #093255;
+        -fx-border-color : #FFF;
+            -fx-background-insets : 0;
+            -fx-border-radius : 20;
+            -fx-text-fill : #FFF;
+}
+.button:hover
+{
+    -fx-background-color : #01182b;
+    -fx-border-radius : 20;
+}
+.button:pressed
+{
+    -fx-background-color : #093255;
+    -fx-border-radius : 20;
+}
+.textfeild
+{
+    -fx-background-color : #093255;
+    -fx-border-color : #FFF;
+    -fx-background-insets : 0;
+    -fx-border-radius : 20;
+    -fx-text-fill : #FFF;
+}
+.text-area {
+    -fx-border-color : #FFF;
+    -fx-background-insets : 0;
+    -fx-border-radius : 10;
+    -fx-text-fill : #FFF;
+    -fx-background-color : #093255;
+    -fx-border-width: 1;
+    -fx-highlight-fill: #FFF;
+}
+
+.text-area .content {
+    -fx-background-color : #093255;
+    -fx-highlight-fill: #FFF;
+}
+
+.text-area:focused .content {
+    -fx-background-color : #093255;
+    -fx-highlight-fill: #FFF;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #FFF;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #FFF;
+}
+.tableView
+{
+     -fx-background-color : #093255;
+     -fx-border-color : #FFF;
+     -fx-border-radius : 20;
+     -fx-text-fill : #FFF;
+}
+
+.combo-box .list-cell{
+    -fx-text-fill : #FFF;
+}
+
+.combo-box .list-view .list-cell{
+    -fx-text-fill : #000;
+}
+
+.tableView {
+    -fx-region-background : #093255;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CheckBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.check-box > .box {
+    -fx-background-radius: 3;
+    /*-fx-padding: 0.166667em 0.166667em 0.25em 0.25em; !* 2 2 3 3 *!*/
+    -fx-padding:0;
+    -fx-border-color: #56c0e0;
+    -fx-border-radius: 3;
+    -fx-background-color: white;
+}
+.check-box > .box > .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.416667em 0.416667em 0.5em 0.5em; /* 5 5 6 6 */
+    -fx-shape: "M927.936 272.992l-68.288-68.288c-12.608-12.576-32.96-12.576-45.536 0l-409.44 409.44-194.752-196.16c-12.576-12.576-32.928-12.576-45.536 0l-68.288 68.288c-12.576 12.608-12.576 32.96 0 45.536l285.568 287.488c12.576 12.576 32.96 12.576 45.536 0l500.736-500.768c12.576-12.544 12.576-32.96 0-45.536z";
+    -fx-background-insets: -3 -3 1 0;
+}
+.check-box {
+    -fx-label-padding: 0.2em 0.0em 0.3em 0.416667em; /* 0 0 0 5 */
+    -fx-text-fill: -fx-text-background-color;
+    -fx-padding: 0 0 2 0;
+}
+.check-box:indeterminate > .box {
+    -fx-padding: 0;
+}
+.check-box:selected > .box > .mark {
+    -fx-background-color: linear-gradient(to bottom, #56c0e0, #40b8dc);
+}
+
+/*table view columns*/
+.filler,.column-header,.show-hide-columns-button {
+    -fx-background-color: #dddddd, white, white;
+}
+.show-hide-columns-button {
+    -fx-border-width: 0;
+    -fx-background-insets: 0 0 1 1;
+}
+.column-header:hover,.show-hide-columns-button:hover {
+    -fx-background-color: #dddddd, white, #f8f8f8;
+}
+.column-header-background > .filler {
+    -fx-border-color: transparent #dddddd transparent transparent;
+    -fx-border-insets: 0 1 0 0;
+}
+.column-drag-header {
+    -fx-background-color: #2fb254;
+}
+
+#Per {
+    -fx-graphic: url("personnel.png");
+}
+#Act{
+    -fx-graphic: url("action.png");
+}
+#Sui{
+    -fx-graphic: url("suivi.png");
+}
+#Tableau_bord{
+    -fx-graphic: url("dashboard.png");
+}
+#Ajouter{
+    -fx-graphic: url("ajouter.png");
+}
+#supprimer{
+    -fx-graphic: url("supprimer.png");
+}
+#fil{
+    -fx-graphic: url("filtrer.png");
+}
+#Vider{
+    -fx-graphic: url("vider.png");
+}
+#exprtBtn {
+    -fx-graphic: url("export.png");
+}
+#imprtBtn{
+    -fx-graphic: url("import.png");
+}
+
+.scene {
+    -fx-background-color : #093255;
+}
+#Combobox{
+    -fx-prompt-text-fill: white;
+}
+

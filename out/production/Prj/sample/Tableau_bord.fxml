@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="764.0" style="-fx-background-color: #093255;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard_Controller">
+   <children>
+      <JFXComboBox fx:id="Combobox" layoutX="10.0" layoutY="10.0" onAction="#FCombobox" prefHeight="49.0" prefWidth="340.0" promptText="                      Choisir un critère de formation" styleClass="text-area" stylesheets="@../css/sample.css" unFocusColor="#797777" />
+      <TableView fx:id="Tableview" layoutX="4.0" layoutY="82.0" prefHeight="151.0" prefWidth="757.0" styleClass="tableView" stylesheets="@../css/sample.css">
+        <columns>
+          <TableColumn fx:id="C1" prefWidth="263.0" text="Lieu de formation" />
+          <TableColumn fx:id="C2" prefWidth="121.0" text="Cadre" />
+            <TableColumn fx:id="C3" prefWidth="122.0" text="Maitrise" />
+            <TableColumn fx:id="C4" prefWidth="115.0" text="Execution" />
+            <TableColumn fx:id="C5" prefWidth="133.0" text="Total général" />
+        </columns>
+      </TableView>
+      <BarChart fx:id="Barchart" layoutX="8.0" layoutY="233.0" prefHeight="362.0" prefWidth="757.0">
+        <xAxis>
+          <CategoryAxis fx:id="XAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="YAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <DatePicker fx:id="Date_debut" layoutX="390.0" layoutY="22.0" promptText="Date début" />
+      <DatePicker fx:id="Date_fin" layoutX="577.0" layoutY="22.0" promptText="Date fin" />
+   </children>
+</AnchorPane>

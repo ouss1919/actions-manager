@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="commons-collections4-4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Library/commons-collections4-4.4.jar!/" />
+      <root url="jar://$USER_HOME$/Library/commons-compress-1.19.jar!/" />
+      <root url="jar://$USER_HOME$/Library/controlsfx-11.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Library/dom4j-2.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/Library/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$USER_HOME$/Library/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Library/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Library/jfoenix-9.0.9.jar!/" />
+      <root url="jar://$USER_HOME$/Library/mysql-connector-java-5.1.48.jar!/" />
+      <root url="jar://$USER_HOME$/Library/xmlbeans-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Gestion_Personne">
+   <children>
+      <HBox prefHeight="200.0" prefWidth="1200.0" style="-fx-background-color: #093255;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../css/logo.png" />
+               </image></ImageView>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+               <children>
+                  <AnchorPane layoutX="-5.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="11.0" />
+                   <ScrollPane fx:id="filterscp" layoutX="20" layoutY="80.0" prefHeight="103.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+                       <content>
+                           <AnchorPane fx:id="ANP" minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+                               <children>
+                                   <JFXRadioButton fx:id="RBP1" layoutX="50.0" layoutY="35.0" onAction="#FRBP1" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP2" layoutX="190.0" layoutY="35.0" onAction="#FRBP2" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP6" layoutX="770.0" layoutY="35.0" onAction="#FRBP6" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP5" layoutX="630.0" layoutY="35.0" onAction="#FRBP5" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP4" layoutX="490.0" layoutY="35.0" onAction="#FRBP4" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP3" layoutX="340.0" layoutY="35.0" onAction="#FRBP3" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBP7" layoutX="910.0" layoutY="35.0" onAction="#FRBP7" textFill="WHITE" />
+                                   <Button fx:id="BP1" layoutX="75.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP1" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Date" />
+                                   <Button fx:id="BP2" layoutX="211.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP2" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Poste" />
+                                   <Button fx:id="BP3" layoutX="367.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP3" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Type d'emploi" />
+                                   <Button fx:id="BP4" layoutX="517.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP4" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Catégorie" />
+                                   <Button fx:id="BP5" layoutX="654.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP5" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Direction" />
+                                   <Button fx:id="BP7" layoutX="933.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP7" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Service" />
+                                   <Button fx:id="BP6" layoutX="793.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBP6" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Département" />
+                               </children>
+                           </AnchorPane>
+                       </content>
+                   </ScrollPane>
+                   <ScrollPane fx:id="filtersca" layoutX="20" layoutY="80.0" prefHeight="103.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+                    <content>
+                      <AnchorPane fx:id="ANA" minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+                           <children>
+                              <JFXRadioButton fx:id="RBA1" layoutX="50.0" layoutY="35.0" onAction="#FRBA1" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA2" layoutX="190.0" layoutY="35.0" onAction="#FRBA2" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA6" layoutX="770.0" layoutY="35.0" onAction="#FRBA6" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA5" layoutX="630.0" layoutY="35.0" onAction="#FRBA5" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA4" layoutX="490.0" layoutY="35.0" onAction="#FRBA4" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA3" layoutX="340.0" layoutY="35.0" onAction="#FRBA3" textFill="WHITE" />
+                              <JFXRadioButton fx:id="RBA7" layoutX="910.0" layoutY="35.0" onAction="#FRBA7" textFill="WHITE" />
+                              <Button fx:id="BA1" layoutX="75.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA1" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Structure" />
+                              <Button fx:id="BA2" layoutX="211.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA2" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Effectif réel" />
+                              <Button fx:id="BA3" layoutX="367.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA3" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Nmbr de participation" />
+                              <Button fx:id="BA4" layoutX="517.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA4" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Durée/j" />
+                              <Button fx:id="BA5" layoutX="654.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA5" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Début de formation" />
+                               <Button fx:id="BA6" layoutX="793.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA6" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Cout" />
+                               <Button fx:id="BA7" layoutX="933.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBA7" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Organisme" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                   <ScrollPane fx:id="filterscs" layoutX="20" layoutY="87.0" prefHeight="96.0" prefWidth="1220.0" style="-fx-background-color: #093255;">
+                       <content>
+                           <AnchorPane fx:id="ANS" minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="2470.0" style="-fx-background-color: #093255;">
+                               <children>
+                                   <JFXRadioButton fx:id="RBS1" layoutX="50.0" layoutY="35.0" onAction="#FRBS1" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS2" layoutX="200.0" layoutY="35.0" onAction="#FRBS2" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS6" layoutX="800.0" layoutY="35.0" onAction="#FRBS6" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS5" layoutX="650.0" layoutY="35.0" onAction="#FRBS5" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS4" layoutX="500.0" layoutY="35.0" onAction="#FRBS4" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS3" layoutX="350.0" layoutY="35.0" onAction="#FRBS3" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS7" layoutX="950.0" layoutY="35.0" onAction="#FRBS7" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS8" layoutX="1100.0" layoutY="35.0" onAction="#FRBS8" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS9" layoutX="1250.0" layoutY="35.0" onAction="#FRBS9" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS10" layoutX="1400.0" layoutY="35.0" onAction="#FRBS10" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS11" layoutX="1550.0" layoutY="35.0" onAction="#FRBS11" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS12" layoutX="1700.0" layoutY="35.0" onAction="#FRBS12" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS13" layoutX="1850.0" layoutY="35.0" onAction="#FRBS13" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS14" layoutX="2000.0" layoutY="35.0" onAction="#FRBS14" textFill="WHITE" />
+                                   <JFXRadioButton fx:id="RBS15" layoutX="2150.0" layoutY="35.0" onAction="#FRBS15" textFill="WHITE" />
+                                   <Button fx:id="BS1" layoutX="75.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS1" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Fonction" />
+                                   <Button fx:id="BS2" layoutX="225.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS2" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Direction" textFill="#093255" />
+                                   <Button fx:id="BS3" layoutX="375.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS3" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Catégorie" />
+                                   <Button fx:id="BS4" layoutX="525.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS4" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Date debut" textFill="#040061" />
+                                   <Button fx:id="BS5" layoutX="675.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS5" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Date fin" />
+                                   <Button fx:id="BS7" layoutX="975.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS7" prefHeight="30.0" prefWidth="110.0" stylesheets="@../css/sample.css" text="Type formation1" />
+                                   <Button fx:id="BS6" layoutX="825.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS6" prefHeight="35.0" prefWidth="90.0" stylesheets="@../css/sample.css" text="Organisme" />
+                                   <Button fx:id="BS8" layoutX="1125.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS8" prefHeight="30.0" prefWidth="110.0" stylesheets="@../css/sample.css" text="Lieu formation1" />
+                                   <Button fx:id="BS9" layoutX="1275.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS9" prefHeight="35.0" prefWidth="110.0" stylesheets="@../css/sample.css" text="Lieu formation2" />
+                                   <Button fx:id="BS10" layoutX="1425.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS10" prefHeight="35.0" prefWidth="110.0" stylesheets="@../css/sample.css" text="Type formation2" />
+                                   <Button fx:id="BS11" layoutX="1575.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS11" prefHeight="35.0" prefWidth="100.0" stylesheets="@../css/sample.css" text="Planiification" />
+                                   <Button fx:id="BS12" layoutX="1725.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS12" prefHeight="35.0" prefWidth="100.0" stylesheets="@../css/sample.css" text="Attestation" />
+                                   <Button fx:id="BS13" layoutX="1875.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS13" prefHeight="35.0" prefWidth="120.0" stylesheets="@../css/sample.css" text="Avis organisme formation" />
+                                   <Button fx:id="BS14" layoutX="2025.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS14" prefHeight="35.0" prefWidth="120.0" stylesheets="@../css/sample.css" text="Avis retour évaluation" />
+                                   <Button fx:id="BS15" layoutX="2175.0" layoutY="27.0" mnemonicParsing="false" onAction="#FBS15" prefHeight="35.0" prefWidth="120.0" stylesheets="@../css/sample.css" text="Action évaluation" />
+
+                               </children>
+                           </AnchorPane>
+                       </content>
+                   </ScrollPane>
+                   <Button fx:id="exprtBtn" layoutX="678.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exporter" prefHeight="47.0" prefWidth="242.0" stylesheets="@../css/sample.css" text="  Exporter Excel" textFill="WHITE">
+                       <font>
+                           <Font name="Ebrima" size="18.0" />
+                       </font>
+                   </Button>
+                  <Button fx:id="Cancel" layoutX="965.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#FCancel" prefHeight="27.0" prefWidth="31.0" stylesheets="@../css/sample.css" text="X" textFill="#e40707" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                  <Button fx:id="imprtBtn" layoutX="374.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#importer" prefHeight="47.0" prefWidth="242.0" stylesheets="@../css/sample.css" text="  Importer Excel" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="150.0" style="-fx-background-color: #093255;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+             <Button fx:id="Per" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pfonc" prefHeight="112.5" prefWidth="150.0" stylesheets="@../css/sample.css" text="Personnel" textFill="WHITE">
+                 <VBox.margin>
+                     <Insets />
+                 </VBox.margin>
+                 <padding>
+                     <Insets left="5.0" />
+                 </padding>
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+             </Button>
+             <Button fx:id="Act" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#afonc" prefHeight="112.5" prefWidth="150.0" stylesheets="@../css/sample.css" text=" Actions" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font></Button>
+             <Button fx:id="Actp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#apfonc" prefHeight="56" prefWidth="150.0" stylesheets="@../css/sample.css" text="Actions Planifiées" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Ebrima" size="16.0" />
+               </font></Button>
+             <Button fx:id="Actnp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#anfonc" prefHeight="56.5" prefWidth="150.0" stylesheets="@../css/sample.css" text="Actions non Planifiées" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Ebrima" size="13.0" />
+               </font></Button>
+             <Button fx:id="Sui" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sfonc" prefHeight="112.5" prefWidth="150.0" stylesheets="@../css/sample.css" text=" Suivi   " textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Ebrima" size="20.0" />
+               </font></Button>
+             <Button fx:id="Tableau_bord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#FTableau_bord" prefHeight="112.5" prefWidth="150.0" stylesheets="@../css/sample.css" text="Dashboard" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Ebrima" size="15.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="149.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1050.0" style="-fx-background-color: #093255;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <GridPane layoutY="-17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-17.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="446.0" minHeight="10.0" prefHeight="364.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="92.0" prefWidth="1050.0" style="-fx-background-color: #093255;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="filterField" prefHeight="47.0" prefWidth="326.0" styleClass="textfeild" stylesheets="@../css/sample.css" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="Ajouter" layoutY="-1.0" mnemonicParsing="false" onAction="#Fajouter" prefHeight="47.0" prefWidth="181.0" stylesheets="@../css/sample.css" text=" AJOUTER" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="supprimer" mnemonicParsing="false" onAction="#Fsupprimer" prefHeight="47.0" prefWidth="181.0" stylesheets="@../css/sample.css" text=" SUPPRIMER" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="fil" mnemonicParsing="false" onAction="#Filtrer" prefHeight="47.0" prefWidth="181.0" stylesheets="@../css/sample.css" text="  FILTRER" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="Vider" mnemonicParsing="false" onAction="#FVider" prefHeight="47.0" prefWidth="181.0" stylesheets="@../css/sample.css" text="VIDER LA TABLE" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima" size="16.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+                        <TableView fx:id="tableA" layoutX="-1.0" layoutY="28" prefHeight="421.0" prefWidth="1200" styleClass="tableView" stylesheets="@../css/sample.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="31.0">
+                           <columns>
+                              <TableColumn fx:id="Num" prefWidth="50" text="Num" />
+                              <TableColumn fx:id="Action" prefWidth="300" text="Action" />
+                              <TableColumn fx:id="Objectif" prefWidth="300" text="Objectif recherché" />
+                              <TableColumn fx:id="Structure" prefWidth="220" text="Structure" />
+                              <TableColumn fx:id="Effectif" prefWidth="50" text="Effectif réel à former" />
+                              <TableColumn fx:id="NbrP" prefWidth="50" text="Nbre de participation" />
+                              <TableColumn fx:id="Duree" prefWidth="50" text="Durée/ j" />
+                              <TableColumn fx:id="DebutF" prefWidth="70" text="Début de Formation" />
+                              <TableColumn fx:id="Cout" prefWidth="70" text="Cout Prévisionnel (DA)" />
+                              <TableColumn fx:id="OrganismeF" prefWidth="200" text="Organisme de formation" />
+                              <TableColumn fx:id="Lformation" prefWidth="200" text="Lieu de formation" />
+                              <TableColumn fx:id="Periode" prefWidth="70" text="Période d'évaluation à froid" />
+                           </columns>
+                        </TableView>
+             <TableView fx:id="tableP" layoutX="-1.0" layoutY="28" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="1200" styleClass="tableView" stylesheets="@../css/sample.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="31.0">
+                 <columns>
+                     <TableColumn fx:id="Matricule" prefWidth="100" text="Matricule" />
+                     <TableColumn fx:id="Nom" prefWidth="100" text="Nom" />
+                     <TableColumn fx:id="Prenom" prefWidth="100" text="Prénom" />
+                     <TableColumn fx:id="Date_entree" prefWidth="100" text="Date d'Entrée" />
+                     <TableColumn fx:id="Poste" prefWidth="250" text="Poste" />
+                     <TableColumn fx:id="Type_emploi" prefWidth="100" text="Type d'emploi" />
+                     <TableColumn fx:id="Categorie" prefWidth="100" text="Catégorie" />
+                     <TableColumn fx:id="Direction" prefWidth="200" text="Direction" />
+                     <TableColumn fx:id="Departement" prefWidth="300" text="Département" />
+                     <TableColumn fx:id="Service" prefWidth="300" text="Service" />
+                 </columns>
+             </TableView>
+             <TableView fx:id="tableS" layoutY="28" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="1200" styleClass="tableView" stylesheets="@../css/sample.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="31.0">
+                 <columns>
+                     <TableColumn fx:id="Nact" prefWidth="70" text="N° Action" />
+                     <TableColumn fx:id="Mat" prefWidth="70" text="Matricule" />
+                     <TableColumn fx:id="Nom1" prefWidth="120" text="Nom" />
+                     <TableColumn fx:id="Prenom1" prefWidth="120" text="Prénom" />
+                     <TableColumn fx:id="Fonction" prefWidth="280" text="Fonction" />
+                     <TableColumn fx:id="Diraff" prefWidth="200" text="Direction d'affectation" />
+                     <TableColumn fx:id="Cat" prefWidth="70" text="Categorie socio-professionnelle" />
+                     <TableColumn fx:id="Ifor" prefWidth="220" text="Intitulé de la formation" />
+                     <TableColumn fx:id="Ddebut" prefWidth="70" text="Date début" />
+                     <TableColumn fx:id="Dfin" prefWidth="75.0" text="Date fin" />
+                     <TableColumn fx:id="Cfor" prefWidth="75.0" text="Cout de formation" />
+                     <TableColumn fx:id="NbrJ" prefWidth="90.0" text="Nombre de jours" />
+                     <TableColumn fx:id="Nbrh" prefWidth="90.0" text="Nombre d'heures" />
+                     <TableColumn fx:id="Tfor" prefWidth="100.0" text="Type de formation" />
+                     <TableColumn fx:id="Ofor" prefWidth="100.0" text="Organisme de formation " />
+                     <TableColumn fx:id="Lfor" prefWidth="100.0" text="Lieu de la formation" />
+                     <TableColumn fx:id="Lfor2" prefWidth="75.0" text="Lieu de la formation2" />
+                     <TableColumn fx:id="Tfor2" prefWidth="100.0" text="Type de formation2" />
+                     <TableColumn fx:id="Plan" prefWidth="75.0" text="Planification" />
+                     <TableColumn fx:id="Peva" prefWidth="75.0" text="Période d'évaluation à froid" />
+                     <TableColumn fx:id="Att" prefWidth="75.0" text="Attestation(s) reçue(s" />
+                     <TableColumn fx:id="Aseof" prefWidth="75.0" text="Avis suite à l'évaluation de l'organisme de formation " />
+                     <TableColumn fx:id="asref" prefWidth="75.0" text="Avis suite au retour de l'évaluation à froid  " />
+                     <TableColumn fx:id="apsefi" prefWidth="75.0" text="Action prise suite à l'évaluation à froid insufisante" />
+                     <TableColumn fx:id="pef" prefWidth="100.0" text="Prévision effectif à formé" />
+                     <TableColumn fx:id="pcf" prefWidth="100.0" text="Prévison cout de la formation" />
+                     <TableColumn fx:id="pdr" prefWidth="100.0" text="Prévision date de réalisation" />
+                     <TableColumn fx:id="pNj" prefWidth="100.0" text="Prévision Nombre de jours" />
+                     <TableColumn fx:id="Pnh" prefWidth="100.0" text="Prévision Nombre d'heures" />
+                 </columns>
+             </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="Logo" fitHeight="425.0" fitWidth="1050.0" layoutX="150.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../css/logo10.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
